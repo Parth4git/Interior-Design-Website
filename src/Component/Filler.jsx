@@ -7,7 +7,7 @@ const Filler = (props) => {
         <h1 className="text-4xl font-bold text-white mb-4">{props.title}</h1>
         <p className="text-lg text-gray-300 mb-6">{props.desc}</p>
         <button className="bg-green-500 text-black px-6 py-3 rounded-md hover:scale-110 transition duration-300">
-          WhatsApp Now
+          {props.buttonText}
         </button>
       </div>
     </div>

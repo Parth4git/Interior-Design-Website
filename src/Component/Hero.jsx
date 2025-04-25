@@ -7,9 +7,12 @@ const HeroSection = () => {
         {/* Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            Interior Design
+            D.K. Architects
           </h1>
-          <p className="text-lg text-gray-800 leading-relaxed">
+          <h2 className="text-2xl md:text-2xl font-semibold text-green-600 mb-4 font-serif">
+            Where Creativity Meets Precision
+          </h2>
+          <p className="text-lg text-gray-800 leading-relaxed t font-light">
             Step into a world where the art of Interior Design is meticulously
             crafted to bring together timeless elegance and cutting-edge modern
             Innovation, allowing you to transform your living spaces into the
@@ -17,7 +20,7 @@ const HeroSection = () => {
           </p>
           <div className="flex items-center justify-center md:justify-start mt-6 space-x-4">
             <button className="bg-gray-900 text-gray-50 px-6 py-3 rounded-md hover:scale-110 hover:shadow-md shadow-green-500 transition duration-300">
-              Get Started
+              Know More
             </button>
             <button className=" bg-gray-900 text-gray-50 px-6 py-3 rounded-md hover:scale-110 hover:shadow-md shadow-green-500 transition duration-300">
               Get Project

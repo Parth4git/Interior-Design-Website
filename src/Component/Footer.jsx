@@ -7,7 +7,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* First Column: Company Info */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-white">Company</h3>
+          <img
+            src="/DK ARCHITECTS LOGO FILE(1).png"
+            alt="Logo"
+            className="h-12 w-36 mb-4"
+          />
           {/* <p className="text-sm mb-2">Your Interior Design Studio</p>
           <p className="text-sm mb-2">123 Design Street, Kanpur, UP</p>
           <p className="text-sm mb-2">Email: info@yourdesign.com</p>
@@ -45,9 +49,9 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4 text-white">Navigation</h3>
           <ul className="text-sm">
             <li className="mb-2">Home</li>
-            <li className="mb-2">About Us</li>
+            <li className="mb-2">Portfolio</li>
             <li className="mb-2">Services</li>
-            <li className="mb-2">Projects</li>
+            <li className="mb-2">About Us</li>
             <li>Contact Us</li>
           </ul>
         </div>
@@ -110,8 +114,7 @@ const Footer = () => {
       </div>
       <div className="max-w-7xl mx-auto mt-8 text-center text-sm text-gray-500 border-t border-gray-700 pt-4">
         <p>
-          &copy; {new Date().getFullYear()} Your Interior Design Studio. All
-          rights reserved.
+          &copy; {new Date().getFullYear()} D.K.Architects. All rights reserved.
         </p>
         <p className="mt-1">
           Designed & Developed by{" "}
@@ -121,7 +124,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:text-white"
           >
-            Your Name/Company Name
+            Quartz Technologies
           </a>
         </p>
       </div>

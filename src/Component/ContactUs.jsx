@@ -17,24 +17,24 @@ const ContactUs = () => {
             <p className="text-lg">
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:xyz@gmail.com"
+                href="mailto:dkarchitects7@gmail.com "
                 className="text-gray-600 hover:underline"
               >
-                xyz@gmail.com
+                dkarchitects7@gmail.com
               </a>
             </p>
             <p className="text-lg">
               <strong>Phone:</strong>{" "}
               <a
-                href="tel:+1234567890"
+                href="tel:+916395788806"
                 className="text-gray-600 hover:underline"
               >
-                +123 456 7890
+                +91 6395788806
               </a>
             </p>
             <p className="text-lg text-gray-600">
-              <strong className="text-black">Address:</strong> 123 Main Street,
-              City, Country
+              <strong className="text-black">Address:</strong> 1619/1 Madhav
+              puram Delhi road Meerut, Uttar Pradesh 250002
             </p>
           </div>
         </div>

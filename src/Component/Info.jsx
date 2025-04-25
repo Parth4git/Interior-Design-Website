@@ -16,17 +16,16 @@ const info = () => {
         {/* Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-10">
-            Designing Your Dream With Brilliance
+            Our Philosophy
           </h2>
-          <p className="text-lg text-gray-800 leading-relaxed font-sans">
-            Elevate your spaces with bespoke interior designs that reflect your
-            unique style and aspirations, crafted with precision and brilliance
-            for an unforgettable living experience.
+          <p className="text-xl text-green-500 leading-relaxed font-serif">
+            “Precision in Every Line. Passion in Every Space.”
           </p>
           <p className="text-lg text-gray-800 leading-relaxed font-sans mt-4">
-            Our team of expert designers is dedicated to transforming your
-            vision into reality, ensuring every detail is meticulously curated
-            to create a harmonious and inviting atmosphere.
+            We believe in precision-led design, where every idea is driven by
+            creativity, efficiency, and technical soundness. From concept to
+            execution, we prioritize your vision and deliver it with absolute
+            precision.
           </p>
           <button className="mt-10 bg-black text-gray-50 py-2 px-4 rounded-lg hover:scale-125 transition duration-300">
             Know More

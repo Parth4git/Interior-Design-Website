@@ -18,18 +18,18 @@ const About = () => {
           <h2 className="text-3xl md:text-6xl font-bold text-black mb-18">
             About Us
           </h2>
-          <p className="text-lg text-gray-800 leading-relaxed mb-6">
-            We are a passionate team of interior designers dedicated to creating
-            stunning and functional spaces. With a blend of creativity and
-            expertise, we bring your vision to life, making every space unique
-            and inspiring.
+          <p className="text-lg text-gray-800 leading-relaxed mb-6 ">
+            D.K. Architects is a leading architectural and design firm founded
+            by Ar. Deepak Kaushik, delivering timeless, functional, and visually
+            compelling spaces through creativity, technology, and accuracy. We
+            specialize in design excellence, thorough documentation, and
+            cutting-edge BIM implementation to ensure every project is built on
+            clarity and innovation.
           </p>
           <p className="text-lg text-gray-800 leading-relaxed mb-6">
             Our mission is to transform your living and working environments
             into beautiful, functional spaces that reflect your personality and
-            lifestyle. We believe that great design should be accessible to
-            everyone, and we work closely with our clients to ensure their needs
-            are met.
+            lifestyle.
           </p>
           <button className="bg-black text-gray-50 px-6 py-3 rounded-md hover:scale-110 transition duration-300 mb-6 mt-4">
             Learn More

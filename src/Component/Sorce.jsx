@@ -6,31 +6,19 @@ const Sorce = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Content */}
         <div className="md:w-1/2 text-center md:text-left mt-10">
-          <h1 className="text-2xl md:text-2xl font-bold text-black mb-6">
-            Designing Your Dream in Three Simple Steps
+          <h1 className="text-2xl md:text-6xl font-bold text-black mb-6">
+            Why Choose Us
           </h1>
-          <h2 className="text-xl md:text-xl font-bold text-black mb-1">
-            Start Project
-          </h2>
-          <p className="text-lg text-gray-800 leading-relaxed mt-4 mb-1">
-            Embark on your design adventure by initiating your project. Share
-            your vision and set the stage for a bespoke design experience
-          </p>
-          <h2 className="text-2xl md:text-xl font-bold text-black mb-1">
-            Start Project
-          </h2>
-          <p className="text-lg text-gray-800 leading-relaxed mt-4 mb-1">
-            Embark on your design adventure by initiating your project. Share
-            your vision and set the stage for a bespoke design experience
-          </p>
-          <h2 className="text-2xl md:text-xl font-bold text-black mb-1">
-            Start Project
-          </h2>
-          <p className="text-lg text-gray-800 leading-relaxed mt-4 mb-1">
-            Embark on your design adventure by initiating your project. Share
-            your vision and set the stage for a bespoke design experience
-          </p>
-          <button className=" bg-black text-gray-50 px-6 py-3 rounded-md hover:scale-110 transition duration-300 mt-2">
+          <ul className="list-disc list-inside text-xl text-gray-800 leading-relaxed mb-6 font-serif">
+            <li>Precision-Driven Documentation</li>
+            <li>AI-Enabled BIM Workflows</li>
+            <li> Multi-disciplinary Design Capabilities </li>
+            <li> Transparent & Reliable Delivery</li>
+            <li>Industry-Standard BOQs & Cost Sheets</li>
+            <li> Future-Ready Smart Design Techniques </li>
+            <li> Personalized Client Support</li>
+          </ul>
+          <button className=" bg-black text-gray-50 px-6 py-3 rounded-md hover:scale-110 transition duration-300 ">
             Get Project
           </button>
         </div>

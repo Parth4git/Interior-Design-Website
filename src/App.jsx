@@ -16,9 +16,11 @@ function App() {
       <Header />
       <Hero />
       <Services />
+
       <Filler
         title="Need some conceptual design ideas?"
         desc="We are here to help you with your design needs. Our team of experts is ready to assist you in bringing your vision to life."
+        buttonText="WhatsApp Us"
       />
       <Info />
       <Portfolio />
@@ -26,6 +28,7 @@ function App() {
       <Filler
         title="Ready to transform your space?"
         desc="Contact us today to schedule a consultation and let us help you create the space of your dreams."
+        buttonText="Schedule a Site Visit"
       />
       <Sorce />
       <ContactUs />
