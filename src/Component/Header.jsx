@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
           <img
-            src="/public/DK ARCHITECTS LOGO FILE(1).png"
+            src="/DK ARCHITECTS LOGO FILE(1).png"
             alt="Logo"
             className="h-12 w-36"
           />

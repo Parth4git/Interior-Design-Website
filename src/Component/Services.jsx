@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const services = [
   {
@@ -75,7 +75,13 @@ const services = [
   },
 ];
 
-const ServicesSection = () => {
+const Service = () => {
+  const [flippedIndex, setFlippedIndex] = useState(null);
+
+  const handleFlip = (index) => {
+    setFlippedIndex(flippedIndex === index ? null : index);
+  };
+
   return (
     <section className="bg-gray-100 py-16 px-4">
       <div className="max-w-6xl mx-auto text-center mb-12">
@@ -83,43 +89,51 @@ const ServicesSection = () => {
         <p className="text-gray-600">Delivering solutions to help you grow</p>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
-        {services.map((service, index) => (
-          <div key={index} className="group [perspective:1000px]">
-            <div className="relative w-full h-72 transition-transform duration-700 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
-              {/* Front Side */}
+        {services.map((service, index) => {
+          const isFlipped = flippedIndex === index;
 
+          return (
+            <div
+              key={index}
+              className="group [perspective:1000px] cursor-pointer"
+              onClick={() => handleFlip(index)}
+            >
               <div
-                className="absolute w-full h-full bg-cover bg-center rounded-xl flex items-center justify-center text-white text-2xl font-bold [backface-visibility:hidden]"
-                style={{
-                  backgroundImage: `url(${service.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-
-                  filter: "brightness(0.8)",
-                }}
+                className={`relative w-full h-72 transition-transform duration-700 [transform-style:preserve-3d] ${
+                  isFlipped ? "[transform:rotateY(180deg)]" : ""
+                } group-hover:[transform:rotateY(180deg)]`}
               >
-                <div className=" w-full h-full flex items-center justify-center rounded-xl text-white text-2xl font-bold bg-gradient-to-t from-gray-900 to-transparent">
-                  {service.name}
+                {/* Front Side */}
+                <div
+                  className="absolute w-full h-full bg-cover bg-center rounded-xl flex items-center justify-center text-white text-2xl font-bold [backface-visibility:hidden]"
+                  style={{
+                    backgroundImage: `url(${service.image})`,
+                    filter: "brightness(0.8)",
+                  }}
+                >
+                  <div className="w-full h-full flex items-center justify-center rounded-xl text-white text-2xl font-bold bg-gradient-to-t from-gray-900 to-transparent">
+                    {service.name}
+                  </div>
+                </div>
+
+                {/* Back Side */}
+                <div className="absolute w-full h-full bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                  <h3 className="text-2xl font-bold mb-2">{service.name}</h3>
+                  <ul className="text-gray-50 text-md">
+                    {service.description.map((desc, i) => (
+                      <li key={i} className="mb-2 list-none">
+                        {desc}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-
-              {/* Back Side */}
-              <div className="absolute w-full h-full bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <h3 className="text-2xl font-bold mb-2">{service.name}</h3>
-                <p className="text-gray-50 text-md">
-                  {service.description.map((desc, index) => (
-                    <li key={index} className="mb-2 list-none">
-                      {desc}
-                    </li>
-                  ))}
-                </p>
-              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
 };
 
-export default ServicesSection;
+export default Service;
