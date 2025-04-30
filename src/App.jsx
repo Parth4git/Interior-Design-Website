@@ -9,6 +9,8 @@ import Sorce from "./Component/Sorce";
 import ContactUs from "./Component/ContactUs";
 import Footer from "./Component/Footer";
 import Filler from "./Component/Filler";
+import FaqPart from "./Component/FaqPart";
+import Steps from "./Component/Steps";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <Header />
       <Hero />
       <Services />
+      <FaqPart />
 
       <Filler
         title="Need some conceptual design ideas?"
@@ -25,11 +28,13 @@ function App() {
       <Info />
       <Portfolio />
       <About />
+      <Steps />
       <Filler
         title="Ready to transform your space?"
         desc="Contact us today to schedule a consultation and let us help you create the space of your dreams."
         buttonText="Schedule a Site Visit"
       />
+
       <Sorce />
       <ContactUs />
       <Footer />

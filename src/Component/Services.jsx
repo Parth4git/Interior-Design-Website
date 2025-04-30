@@ -70,7 +70,6 @@ const services = [
       "BOQs, Load Calculations, Drawings",
       "Coordinated BIM Models",
       "BIM Engineering Expertise",
-      "Design & Calculation Reports",
     ],
   },
 ];
@@ -83,10 +82,10 @@ const Service = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-16 px-4">
+    <section className="bg-gray-50 py-16 px-4">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold mb-2">Our Services</h2>
-        <p className="text-gray-600">Delivering solutions to help you grow</p>
+        <p className="text-gray-800">Delivering solutions to help you grow</p>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
         {services.map((service, index) => {
@@ -111,14 +110,16 @@ const Service = () => {
                     filter: "brightness(0.8)",
                   }}
                 >
-                  <div className="w-full h-full flex items-center justify-center rounded-xl text-white text-2xl font-bold bg-gradient-to-t from-gray-900 to-transparent">
+                  <div className="w-full h-full flex items-center justify-center rounded-xl text-white text-2xl text-center font-bold bg-gradient-to-t from-gray-900 to-transparent">
                     {service.name}
                   </div>
                 </div>
 
                 {/* Back Side */}
-                <div className="absolute w-full h-full bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                  <h3 className="text-2xl font-bold mb-2">{service.name}</h3>
+                <div className="absolute w-full h-full bg-gradient-to-bl from-gray-100 via-gray-400 to-gray-900 rounded-xl p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                  <h3 className="text-2xl font-bold mb-2 text-center">
+                    {service.name}
+                  </h3>
                   <ul className="text-gray-50 text-md">
                     {service.description.map((desc, i) => (
                       <li key={i} className="mb-2 list-none">

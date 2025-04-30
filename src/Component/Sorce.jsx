@@ -9,7 +9,7 @@ const Sorce = () => {
           <h1 className="text-2xl md:text-6xl font-bold text-black mb-6">
             Why Choose Us
           </h1>
-          <ul className="list-disc list-inside text-xl text-gray-800 leading-relaxed mb-6 font-serif">
+          <ul className="list-disc list-outside pl-6 text-xl text-gray-800 leading-relaxed mb-6 font-serif">
             <li>Precision-Driven Documentation</li>
             <li>AI-Enabled BIM Workflows</li>
             <li> Multi-disciplinary Design Capabilities </li>
@@ -28,7 +28,7 @@ const Sorce = () => {
           <img
             src="https://plus.unsplash.com/premium_photo-1674730952112-965c8e4decf4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMzfHxpbnRlcmlvciUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
             alt="Interior Design"
-            className="w-full h-96 rounded-2xl shadow-lg shadow-green-500 hover:scale-105 transition-transform duration-300"
+            className="w-full h-96 rounded-2xl shadow-lg shadow-grey-500 hover:scale-105 transition-transform duration-300"
           />
         </div>
       </div>
