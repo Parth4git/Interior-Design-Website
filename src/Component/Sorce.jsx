@@ -18,7 +18,10 @@ const Sorce = () => {
             <li> Future-Ready Smart Design Techniques </li>
             <li> Personalized Client Support</li>
           </ul>
-          <button className=" bg-black text-gray-50 px-6 py-3 rounded-md hover:scale-110 transition duration-300 ">
+          <button
+            className=" bg-black text-gray-50 px-6 py-3 rounded-md hover:scale-110 transition duration-300 "
+            onClick={() => (window.location.href = "/contact")}
+          >
             Get Project
           </button>
         </div>

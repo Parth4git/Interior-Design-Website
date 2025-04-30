@@ -1,6 +1,32 @@
 import React from "react";
 
 const ContactUs = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "5bb2e65f-0193-4f52-a71a-066243e220ae");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      alert("Form Submitted Successfully");
+      console.log(result);
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <section className="w-full bg-gray-50 py-20 px-6 md:px-12 ">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -40,7 +66,10 @@ const ContactUs = () => {
         </div>
 
         {/* Right: Form */}
-        <form className="bg-white p-6 rounded-2xl shadow-xl w-full mt-8 border border-gray-300 h-96">
+        <form
+          className="bg-white p-6 rounded-2xl shadow-xl w-full mt-8 border border-gray-300 h-96"
+          onSubmit={onSubmit}
+        >
           <div>
             <label
               htmlFor="name"

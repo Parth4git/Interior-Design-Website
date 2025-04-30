@@ -107,10 +107,10 @@ const Service = () => {
                   className="absolute w-full h-full bg-cover bg-center rounded-xl flex items-center justify-center text-white text-2xl font-bold [backface-visibility:hidden]"
                   style={{
                     backgroundImage: `url(${service.image})`,
-                    filter: "brightness(0.8)",
+                    filter: "brightness(0.9) ",
                   }}
                 >
-                  <div className="w-full h-full flex items-center justify-center rounded-xl text-white text-2xl text-center font-bold bg-gradient-to-t from-gray-900 to-transparent">
+                  <div className="w-full h-full flex items-center justify-center rounded-xl text-white text-2xl text-center font-bold bg-gradient-to-t from-gray-950 via-transparent to-transparent ">
                     {service.name}
                   </div>
                 </div>
@@ -120,7 +120,7 @@ const Service = () => {
                   <h3 className="text-2xl font-bold mb-2 text-center">
                     {service.name}
                   </h3>
-                  <ul className="text-gray-50 text-md">
+                  <ul className="text-white text-md">
                     {service.description.map((desc, i) => (
                       <li key={i} className="mb-2 list-none">
                         {desc}

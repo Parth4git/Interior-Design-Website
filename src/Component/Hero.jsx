@@ -1,7 +1,16 @@
 import React from "react";
-import CountUp from "react-countup"; // Importing CountUp for animated counters
+import CountUp from "react-countup";
+import { useNavigate } from "react-router-dom"; // Importing CountUp for animated counters
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate("/contact");
+  };
+  const handleKnowMore = () => {
+    navigate("/about");
+  };
   return (
     <section className="w-full bg-gray-50 py-16 px-6 md:px-12 pt-38">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
@@ -20,10 +29,16 @@ const HeroSection = () => {
             epitome of luxury and sophistication.
           </p>
           <div className="flex items-center justify-center md:justify-start mt-6 space-x-4">
-            <button className="bg-gray-900 text-gray-50 px-6 py-3 rounded-md hover:scale-110 hover:shadow-md shadow-grey-500 transition duration-300">
+            <button
+              className="bg-gray-900 text-gray-50 px-6 py-3 rounded-md hover:scale-110 hover:shadow-md shadow-grey-500 transition duration-300"
+              onClick={handleKnowMore}
+            >
               Know More
             </button>
-            <button className=" bg-gray-900 text-gray-50 px-6 py-3 rounded-md hover:scale-110 hover:shadow-md shadow-grey-500 transition duration-300">
+            <button
+              className=" bg-gray-900 text-gray-50 px-6 py-3 rounded-md hover:scale-110 hover:shadow-md shadow-grey-500 transition duration-300"
+              onClick={handleGetStarted}
+            >
               Get Project
             </button>
           </div>

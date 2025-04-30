@@ -35,12 +35,12 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <ul className="hidden md:flex space-x-8 text-gray-700 font-serif text-xl">
           {links.map(({ name, path }) => (
             <li
               key={name}
               onClick={() => handleNav(path)}
-              className="hover:text-gray-900 cursor-pointer"
+              className="hover:text-black cursor-pointer"
             >
               {name}
             </li>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
         {/* Desktop CTA Button */}
         <button
-          onClick={() => handleNav("/start-project")}
+          onClick={() => handleNav("/contact")}
           className="hidden md:block bg-gray-900 text-white px-4 py-2 rounded-md hover:scale-105 transition duration-300"
         >
           Start Project
@@ -58,7 +58,9 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center space-x-6">
           <button
-            onClick={() => handleNav("/start-project")}
+            onClick={() => {
+              navigate("/contact");
+            }}
             className="bg-gray-900 text-white px-4 py-2 rounded-md hover:scale-105 transition duration-300"
           >
             Start Project

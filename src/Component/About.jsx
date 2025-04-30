@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <section className="w-full bg-gray-50 py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
@@ -31,7 +33,12 @@ const About = () => {
             into beautiful, functional spaces that reflect your personality and
             lifestyle.
           </p>
-          <button className="bg-black text-gray-50 px-6 py-3 rounded-md hover:scale-110 transition duration-300 mb-6 mt-4">
+          <button
+            className="bg-black text-gray-50 px-6 py-3 rounded-md hover:scale-110 transition duration-300 mb-6 mt-4"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
             Learn More
           </button>
           <img

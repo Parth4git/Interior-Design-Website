@@ -71,7 +71,9 @@ const Footer = () => {
 
         {/* Fourth Column: Contact Us */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
+          <h3 className="text-lg font-semibold mb-4 text-white">
+            Get In Touch
+          </h3>
           <p className="text-sm mb-4">Get the latest design and ideas.</p>
           <form className="flex flex-col space-y-4">
             <input
@@ -86,17 +88,17 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-8 text-center text-sm text-gray-500 border-t border-gray-700 pt-4">
+      <div className="max-w-7xl mx-auto mt-8 text-center text-sm text-gray-400 border-t border-gray-700 pt-4">
         <p>
           &copy; {new Date().getFullYear()} D.K.Architects. All rights reserved.
         </p>
         <p className="mt-1">
           Designed & Developed by{" "}
           <a
-            href="https://yourdeveloperwebsite.com" // Replace with your or your developer's website
+            href="https://www.quartztechindia.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white"
+            className="text-gray-300 hover:text-white"
           >
             Quartz Technologies
           </a>
