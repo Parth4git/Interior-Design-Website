@@ -19,7 +19,7 @@ const Footer = () => {
           <p className="text-sm">Phone: +91 9876543210</p> */}
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="https://g.co/kgs/qhFoHz5"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white"
@@ -27,7 +27,7 @@ const Footer = () => {
               <GrGoogle className="w-6 h-6" />
             </a>
             <a
-              href="https://g.co/kgs/qhFoHz5"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white"
