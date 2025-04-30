@@ -1,5 +1,6 @@
 import React from "react"; // Assuming you're using React Router for navigation
-import { Instagram, Facebook, Twitter } from "lucide-react"; // Example social icons
+import { Instagram, Facebook } from "lucide-react"; // Example social icons
+import { GrGoogle } from "react-icons/gr";
 
 const Footer = () => {
   return (
@@ -23,10 +24,10 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white"
             >
-              <Twitter className="w-6 h-6" />
+              <GrGoogle className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://g.co/kgs/qhFoHz5"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white"
@@ -68,35 +69,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Fourth Column: Social Media */}
+        {/* Fourth Column: Contact Us */}
         <div>
-          {/* <h3 className="text-lg font-semibold mb-4 text-white">Follow Us</h3>
-          <div className="flex space-x-4"> */}
-          {/* <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white"
-            >
-              <Instagram className="w-6 h-6" />
-            </a> */}
-          {/* <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white"
-            >
-              <Facebook className="w-6 h-6" />
-            </a> */}
-          {/* <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white"
-            >
-              <Twitter className="w-6 h-6" />
-            </a> */}
-          {/* </div> */}
           <h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
           <p className="text-sm mb-4">Get the latest design and ideas.</p>
           <form className="flex flex-col space-y-4">

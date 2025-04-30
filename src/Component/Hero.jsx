@@ -31,19 +31,19 @@ const HeroSection = () => {
           <div className="flex justify-center md:justify-start mt-10 gap-16">
             <div className="text-center">
               <h3 className="text-4xl font-bold text-gray-900">
-                <CountUp end={15} duration={2} />+
+                <CountUp end={20} duration={3} />+
               </h3>
-              <p className="text-gray-700 mt-1">Years Experience</p>
+              <p className="text-gray-700 mt-1">Unique Style</p>
             </div>
             <div className="text-center">
               <h3 className="text-4xl font-bold text-gray-900">
-                <CountUp end={120} duration={2.5} />+
+                <CountUp end={25} duration={4} />+
               </h3>
               <p className="text-gray-700 mt-1">Projects Delivered</p>
             </div>
             <div className="text-center">
               <h3 className="text-4xl font-bold text-gray-900">
-                <CountUp end={50} duration={2} />+
+                <CountUp end={18} duration={3} />+
               </h3>
               <p className="text-gray-700 mt-1">Happy Clients</p>
             </div>
