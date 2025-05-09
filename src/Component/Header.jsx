@@ -55,12 +55,10 @@ const Navbar = () => {
           Start Project
         </button>
 
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden flex items-center space-x-6">
+        {/* Mobile Toggle */}
+        <div className="md:hidden flex items-center space-x-4">
           <button
-            onClick={() => {
-              navigate("/contact");
-            }}
+            onClick={() => handleNav("/contact")}
             className="bg-gray-900 text-white px-4 py-2 rounded-md hover:scale-105 transition duration-300"
           >
             Start Project
@@ -71,22 +69,46 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Overlay */}
       {isOpen && (
-        <div className="md:hidden bg-white px-4 pb-4">
-          <ul className="space-y-2 text-gray-700 font-medium">
-            {links.map(({ name, path }) => (
-              <li
-                key={name}
-                onClick={() => handleNav(path)}
-                className="hover:text-gray-900 cursor-pointer"
-              >
-                {name}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <div
+          onClick={() => setIsOpen(false)}
+          className="fixed inset-0  bg-opacity-40 z-30 md:hidden"
+        />
       )}
+
+      {/* Mobile Side Menu */}
+      <div
+        className={`fixed top-0 left-0 h-full w-1/2 bg-white z-40 transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } md:hidden shadow-lg`}
+      >
+        <div className="p-4 flex justify-between items-center border-b">
+          <h2 className="text-xl font-semibold">Menu</h2>
+          <button onClick={() => setIsOpen(false)}>
+            <X size={24} />
+          </button>
+        </div>
+        <ul className="p-4 space-y-4 text-gray-700 font-medium">
+          {links.map(({ name, path }) => (
+            <li
+              key={name}
+              onClick={() => handleNav(path)}
+              className="hover:text-gray-900 cursor-pointer"
+            >
+              {name}
+            </li>
+          ))}
+          <li>
+            <button
+              onClick={() => handleNav("/contact")}
+              className="w-full bg-gray-900 text-white px-4 py-2 rounded-md hover:scale-105 transition duration-300"
+            >
+              Start Project
+            </button>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

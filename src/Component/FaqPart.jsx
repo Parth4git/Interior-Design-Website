@@ -2,14 +2,24 @@ import React, { useState } from "react";
 
 const FAQs = [
   {
-    question: "Living Room Interior Design",
+    question: "Interior Design",
     answer:
-      "Transform your living room into a sanctuary of comfort and style, blending aesthetic appeal with functional elegance.",
+      "We specialize in creating stunning and functional interior spaces that reflect your unique style and needs.",
   },
   {
-    question: "Commercial Office Room Interior Design",
+    question: "Hospitality Design",
     answer:
-      "Create productive and inspiring office environments tailored to your brand and team’s dynamic needs.",
+      "We design luxurious and elegant hospitality spaces that cater to your business needs and expectations.",
+  },
+  {
+    question: "Residential Design",
+    answer:
+      "We create beautiful and comfortable residential spaces that enhance your lifestyle and well-being.",
+  },
+  {
+    question: "Commercial Design",
+    answer:
+      "We design efficient and effective commercial spaces that meet your business goals and enhance productivity.",
   },
 ];
 
@@ -30,8 +40,8 @@ const FaqPart = () => {
           </h1>
           <p className="text-lg text-gray-800 leading-relaxed font-light mb-6">
             Elevate your spaces with bespoke interior designs that reflect your
-            unique style and aspirations, crafted with precision and brilliance
-            for an unforgettable living experience.
+            unique style and aspirations, crafted with precision for an
+            unforgettable living experience.
           </p>
 
           {/* Sub-sections */}
@@ -63,7 +73,7 @@ const FaqPart = () => {
           <img
             src="/RENDER 1.jpg"
             alt="Interior Design"
-            className="w-full rounded-lg shadow-md object-cover"
+            className="w-full  pt-4 rounded-lg shadow-md object-cover"
           />
         </div>
       </div>

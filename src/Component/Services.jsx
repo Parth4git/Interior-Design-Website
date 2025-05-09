@@ -116,11 +116,11 @@ const Service = () => {
                 </div>
 
                 {/* Back Side */}
-                <div className="absolute w-full h-full bg-gradient-to-bl from-gray-100 via-gray-400 to-gray-900 rounded-xl p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="absolute w-full h-full bg-gradient-to-bl from-gray-50 via-gray-500 to-gray-800 rounded-xl p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
                   <h3 className="text-2xl font-bold mb-2 text-center">
                     {service.name}
                   </h3>
-                  <ul className="text-white text-md">
+                  <ul className="text-white text-md font-serif">
                     {service.description.map((desc, i) => (
                       <li key={i} className="mb-2 list-none">
                         {desc}
