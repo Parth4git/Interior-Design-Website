@@ -20,7 +20,7 @@ const About = () => {
           <h2 className="text-3xl md:text-6xl font-bold text-black mb-18">
             About Us
           </h2>
-          <p className="text-lg text-gray-800 leading-relaxed mb-6 ">
+          <p className="text-lg text-gray-800 font-sans leading-relaxed mb-6 ">
             D.K. Architects is a leading architectural and design firm founded
             by Ar. Deepak Kaushik, delivering timeless, functional, and visually
             compelling spaces through creativity, technology, and accuracy. We
@@ -28,7 +28,7 @@ const About = () => {
             cutting-edge BIM implementation to ensure every project is built on
             clarity and innovation.
           </p>
-          <p className="text-lg text-gray-800 leading-relaxed mb-6">
+          <p className="text-lg text-gray-800 font-sans leading-relaxed mb-6">
             Our mission is to transform your living and working environments
             into beautiful, functional spaces that reflect your personality and
             lifestyle.

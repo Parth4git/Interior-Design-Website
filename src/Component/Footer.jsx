@@ -1,6 +1,7 @@
 import React from "react"; // Assuming you're using React Router for navigation
 import { Instagram, Facebook } from "lucide-react"; // Example social icons
 import { GrGoogle } from "react-icons/gr";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 const Footer = () => {
   return (
@@ -49,11 +50,21 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4 text-white">Navigation</h3>
           <ul className="text-sm">
-            <li className="mb-2">Home</li>
-            <li className="mb-2">Portfolio</li>
-            <li className="mb-2">Services</li>
-            <li className="mb-2">About Us</li>
-            <li>Contact Us</li>
+            <Link to="/">
+              <li className="mb-2">Home</li>
+            </Link>
+            <Link to="/portfolio">
+              <li className="mb-2">Portfolio</li>
+            </Link>
+            <Link to="/services">
+              <li className="mb-2">Services</li>
+            </Link>
+            <Link to="/about">
+              <li className="mb-2">About Us</li>
+            </Link>
+            <Link to="/contact">
+              <li>Contact Us</li>
+            </Link>
           </ul>
         </div>
 

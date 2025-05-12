@@ -85,7 +85,9 @@ const Service = () => {
     <section className="bg-gray-50 py-16 px-4">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold mb-2">Our Services</h2>
-        <p className="text-gray-800">Delivering solutions to help you grow</p>
+        <p className="text-gray-800 text-2xl font-serif mt-4">
+          Delivering solutions to help you grow
+        </p>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
         {services.map((service, index) => {
@@ -104,13 +106,13 @@ const Service = () => {
               >
                 {/* Front Side */}
                 <div
-                  className="absolute w-full h-full bg-cover bg-center rounded-xl flex items-center justify-center text-white text-2xl font-bold [backface-visibility:hidden]"
+                  className="absolute w-full h-full bg-cover bg-center rounded-xl flex items-center justify-center text-black text-2xl font-bold [backface-visibility:hidden]"
                   style={{
                     backgroundImage: `url(${service.image})`,
                     filter: "brightness(0.9) ",
                   }}
                 >
-                  <div className="w-full h-full flex items-center justify-center rounded-xl text-white text-2xl text-center font-bold bg-gradient-to-t from-gray-950 via-transparent to-transparent ">
+                  <div className="w-full h-full flex items-center justify-center rounded-xl text-white text-2xl text-center font-bold bg-gradient-to-t from-gray-950 via-transparent to-transparent z-10 ">
                     {service.name}
                   </div>
                 </div>

@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-black mb-6">
             D.K. Architects
           </h1>
           <h2 className="text-2xl md:text-2xl font-semibold text-grey-800 mb-4 font-serif">

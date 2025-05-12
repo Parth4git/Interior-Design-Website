@@ -34,7 +34,7 @@ const ContactUs = () => {
         <div className="text-black space-y-2">
           <h2 className="text-6xl font-bold mb-10">Contact Us</h2>
           <h3 className="text-2xl font-semibold underline">Get in Touch</h3>
-          <p className="text-lg text-gray-600 ">
+          <p className="text-lg text-gray-600 font-serif leading-relaxed mb-6">
             We would love to hear from you! Whether you have a question, need
             assistance, or want to discuss your project, feel free to reach out.
             Our team is here to help every step of the way.
