@@ -71,7 +71,7 @@ const FaqPart = () => {
         {/* Image Section */}
         <div className="md:w-1/2">
           <img
-            src="/RENDER 1.jpg"
+            src="https://res.cloudinary.com/dghvyniz8/image/upload/v1747484798/new2_ydu7xl.jpg"
             alt="Interior Design"
             className="w-full  pt-4 rounded-lg shadow-md object-cover"
           />

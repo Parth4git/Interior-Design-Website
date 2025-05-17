@@ -9,7 +9,7 @@ const Info = () => {
         {/* Image */}
         <div className="md:w-1/2">
           <img
-            src="/new2.jpg"
+            src="https://res.cloudinary.com/dghvyniz8/image/upload/v1747484858/new3_hgnsr1.jpg"
             alt="Elegant Interior"
             className="w-full h-auto rounded-2xl shadow-lg mt-2 shadow-grey-300 md:w-full md:mx-auto"
           />

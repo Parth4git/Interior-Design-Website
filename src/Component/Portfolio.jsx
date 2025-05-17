@@ -13,11 +13,11 @@ const imageUrls = [
   "https://images.unsplash.com/photo-1743410973853-bdd0b5ca674e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww",
   "https://images.unsplash.com/photo-1668438712649-ffd85f756de5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww",
   "https://images.unsplash.com/photo-1680503397107-475907e4f3e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA2fHxpbnRlcmlvciUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
-  "/SONI JI 11.jpg",
-  "/aman bhai 1.JPG",
+  "https://images.unsplash.com/photo-1678233517593-c6843255d28d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww",
+  "https://res.cloudinary.com/dghvyniz8/image/upload/v1747484858/new3_hgnsr1.jpg",
   "/IMG-20250418-WA0040.jpg",
-  "/aman bhai 2.JPG",
-  "/SONU JI 12.jpg",
+  "https://res.cloudinary.com/dghvyniz8/image/upload/v1747484798/new2_ydu7xl.jpg",
+  "https://res.cloudinary.com/dghvyniz8/image/upload/v1747484661/new1_izfuot.jpg",
   "/SONU JI 22.jpg",
 ];
 
